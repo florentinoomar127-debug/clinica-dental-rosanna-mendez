@@ -426,6 +426,40 @@
         </div>
 
       </div>
+
+      <!-- Specialized Services from Client Catalog -->
+      <div class="mt-10 pt-8 border-t border-neutral-100">
+        <h3 class="text-xs font-bold text-neutral-400 uppercase tracking-widest mb-4 text-center sm:text-left">
+          Especialidades Odontológicas
+        </h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+          <div onclick="openBookingModal('Diagnóstico & Consulta General')" class="cursor-pointer group p-4 rounded-2xl bg-neutral-50/70 hover:bg-white border border-neutral-200/60 hover:border-blue-200 hover:shadow-soft transition-all text-left">
+            <span class="text-base sm:text-lg">📋</span>
+            <h4 class="font-bold text-neutral-900 text-xs sm:text-sm mt-1.5">Diagnóstico</h4>
+            <p class="text-[11px] text-neutral-500 mt-0.5">Evaluación clínica completa</p>
+          </div>
+          <div onclick="openBookingModal('Endodoncia')" class="cursor-pointer group p-4 rounded-2xl bg-neutral-50/70 hover:bg-white border border-neutral-200/60 hover:border-blue-200 hover:shadow-soft transition-all text-left">
+            <span class="text-base sm:text-lg">🔬</span>
+            <h4 class="font-bold text-neutral-900 text-xs sm:text-sm mt-1.5">Endodoncia</h4>
+            <p class="text-[11px] text-neutral-500 mt-0.5">Tratamiento de conducto</p>
+          </div>
+          <div onclick="openBookingModal('Periodoncia')" class="cursor-pointer group p-4 rounded-2xl bg-neutral-50/70 hover:bg-white border border-neutral-200/60 hover:border-blue-200 hover:shadow-soft transition-all text-left">
+            <span class="text-base sm:text-lg">🌿</span>
+            <h4 class="font-bold text-neutral-900 text-xs sm:text-sm mt-1.5">Periodoncia</h4>
+            <p class="text-[11px] text-neutral-500 mt-0.5">Salud de encías y hueso</p>
+          </div>
+          <div onclick="openBookingModal('Cirugía Bucal')" class="cursor-pointer group p-4 rounded-2xl bg-neutral-50/70 hover:bg-white border border-neutral-200/60 hover:border-blue-200 hover:shadow-soft transition-all text-left">
+            <span class="text-base sm:text-lg">⚡</span>
+            <h4 class="font-bold text-neutral-900 text-xs sm:text-sm mt-1.5">Cirugía</h4>
+            <p class="text-[11px] text-neutral-500 mt-0.5">Extracciones y cordales</p>
+          </div>
+          <div onclick="openBookingModal('Prótesis Dentales')" class="cursor-pointer group p-4 rounded-2xl bg-neutral-50/70 hover:bg-white border border-neutral-200/60 hover:border-blue-200 hover:shadow-soft transition-all text-left">
+            <span class="text-base sm:text-lg">✨</span>
+            <h4 class="font-bold text-neutral-900 text-xs sm:text-sm mt-1.5">Prótesis</h4>
+            <p class="text-[11px] text-neutral-500 mt-0.5">Rehabilitación dental</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -778,11 +812,14 @@
         <div>
           <label class="block text-[11px] font-bold text-neutral-600 uppercase mb-1">Tratamiento</label>
           <select id="patientService" class="w-full text-xs rounded-xl border-neutral-200 py-2.5 px-3 focus:ring-blue-600 focus:border-blue-600">
-            <option>Diseño de Sonrisa & Carillas</option>
-            <option>Ortodoncia & Alineadores Invisibles</option>
-            <option>Blanqueamiento Dental & Limpieza</option>
-            <option>Valoración & Diagnóstico General</option>
-            <option>Implantes & Prótesis Dentales</option>
+            <option>Diagnóstico & Consulta General</option>
+            <option>Estética Dental & Diseño de Sonrisa</option>
+            <option>Ortodoncia</option>
+            <option>Blanqueamiento Dental</option>
+            <option>Endodoncia</option>
+            <option>Periodoncia</option>
+            <option>Cirugía Bucal</option>
+            <option>Prótesis Dentales</option>
           </select>
         </div>
 
