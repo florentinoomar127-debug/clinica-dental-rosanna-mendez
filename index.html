@@ -218,6 +218,7 @@
         <a href="#hero" class="hover:text-black transition-colors">INICIO</a>
         <a href="#treatments" class="hover:text-black transition-colors">TRATAMIENTOS</a>
         <a href="#results" class="hover:text-black transition-colors">RESULTADOS</a>
+        <a href="#opiniones" class="hover:text-black transition-colors">OPINIONES</a>
         <a href="#faq" class="hover:text-black transition-colors">FAQ</a>
       </nav>
 
@@ -241,6 +242,7 @@
         <a href="#hero" class="hover:text-blue-600 transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">INICIO</a>
         <a href="#treatments" class="hover:text-blue-600 transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">TRATAMIENTOS</a>
         <a href="#results" class="hover:text-blue-600 transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">RESULTADOS</a>
+        <a href="#opiniones" class="hover:text-blue-600 transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">OPINIONES</a>
         <a href="#faq" class="hover:text-blue-600 transition-colors" onclick="document.getElementById('mobileMenu').classList.add('hidden')">FAQ</a>
       </nav>
     </div>
@@ -273,18 +275,23 @@
         <section class="md:col-span-7 xl:col-span-6 flex flex-col justify-between py-2 sm:py-4">
           <div class="space-y-5 sm:space-y-6 lg:space-y-7">
             
-            <!-- Social Proof -->
-            <div class="flex items-center gap-3.5">
-              <div class="flex -space-x-2 overflow-hidden">
-                <img alt="Paciente Dra. Rosanna Méndez" class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80">
-                <img alt="Paciente Dra. Rosanna Méndez" class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80">
-                <img alt="Paciente Dra. Rosanna Méndez" class="inline-block h-8 w-8 rounded-full ring-2 ring-white object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80">
+            <!-- Google Verified Social Proof (Real Client Data) -->
+            <a href="#opiniones" class="inline-flex items-center gap-3 bg-neutral-50 hover:bg-neutral-100/80 border border-neutral-200/80 rounded-full py-1.5 px-3.5 shadow-xs transition-all duration-200 group w-fit">
+              <div class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                </svg>
+                <span class="text-xs font-black text-neutral-900">4.6</span>
+                <div class="flex text-amber-400 text-xs tracking-tight">
+                  ★★★★★
+                </div>
               </div>
-              <div class="leading-tight">
-                <span class="block text-sm font-bold text-neutral-900 leading-none">5k+</span>
-                <span class="text-[11px] font-medium text-neutral-500">Sonrisas Radiantes</span>
-              </div>
-            </div>
+              <span class="h-3 w-px bg-neutral-200"></span>
+              <span class="text-[11px] font-semibold text-neutral-600 group-hover:text-blue-600 transition-colors">5 opiniones en Google Maps</span>
+            </a>
 
             <!-- Main Headline -->
             <h1 class="text-3xl sm:text-4xl md:text-[42px] lg:text-[50px] xl:text-[62px] font-extrabold text-neutral-900 tracking-tight pt-1" style="line-height: 1.18;">
@@ -664,62 +671,199 @@
     </div>
   </section>
 
-  <!-- ==================== TESTIMONIALS ==================== -->
-  <section class="py-16 sm:py-24 bg-white">
+  <!-- ==================== GOOGLE REVIEWS & TESTIMONIALS (REAL BUSINESS DATA) ==================== -->
+  <section id="opiniones" class="py-16 sm:py-24 bg-white scroll-mt-20">
     <div class="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
       
-      <div class="text-center max-w-md mx-auto mb-14">
-        <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">Lo Que Dicen<br class="sm:hidden"> Nuestros Pacientes</h2>
-        <p class="text-neutral-500 text-xs sm:text-sm mt-2">Historias reales, sonrisas reales.</p>
+      <!-- Section Header with Google Identity -->
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 text-[11px] font-bold px-3.5 py-1 rounded-full mb-3 tracking-wider uppercase">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+          </svg>
+          <span>Opiniones Verificadas en Google</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+          Lo Que Dicen Nuestros Pacientes
+        </h2>
+        <p class="text-neutral-500 text-xs sm:text-sm mt-2">
+          Calificación oficial en Google Maps de Clínica Dental Rosanna Méndez.
+        </p>
+
+        <!-- Google Rating Summary Pill Card -->
+        <div class="mt-6 inline-flex flex-wrap items-center justify-center gap-3 sm:gap-5 bg-neutral-50 border border-neutral-200/80 rounded-2xl py-3 px-5 sm:px-6 shadow-xs">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl sm:text-3xl font-black text-neutral-900 leading-none">4.6</span>
+            <div class="flex flex-col items-start">
+              <div class="flex text-amber-400 text-sm tracking-tight leading-none">
+                ★★★★★
+              </div>
+              <span class="text-[10px] text-neutral-500 font-medium mt-1">5 opiniones en Google</span>
+            </div>
+          </div>
+          <span class="hidden sm:block h-7 w-px bg-neutral-200"></span>
+          <div class="text-left">
+            <p class="text-[11px] font-bold text-neutral-800">Plaza Jean Luis, Calle H</p>
+            <p class="text-[10px] text-neutral-500">Santo Domingo 11001, Rep. Dom.</p>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Clinica+dental+Rosanna+Mendez+Plaza+Jean+Luis+Santo+Domingo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-[11px] font-bold text-blue-600 hover:text-blue-700 bg-white hover:bg-blue-50 border border-neutral-200 hover:border-blue-200 py-1.5 px-3 rounded-full transition-all">
+            <span>Escribir opinión</span>
+            <span>↗</span>
+          </a>
+        </div>
       </div>
 
+      <!-- Real Google Reviews Grid -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <div class="bg-neutral-50/70 rounded-3xl p-6 border border-neutral-200/60 flex flex-col justify-between">
+        <!-- Review 1: abraham (Local Guide) -->
+        <div class="bg-neutral-50/70 hover:bg-white rounded-3xl p-6 border border-neutral-200/60 hover:border-blue-200 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
-            <div class="flex gap-1 mb-4">
-              <span class="text-amber-400 text-sm">★</span><span class="text-amber-400 text-sm">★</span><span class="text-amber-400 text-sm">★</span><span class="text-amber-400 text-sm">★</span><span class="text-amber-400 text-sm">★</span>
+            <!-- Google Reviewer Header -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-orange-500 text-white font-bold text-sm flex items-center justify-center shadow-xs">
+                  A
+                </div>
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <p class="text-xs font-bold text-neutral-900">abraham</p>
+                    <span class="text-[10px] font-bold bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full">Local Guide</span>
+                  </div>
+                  <p class="text-[10px] text-neutral-400">23 opiniones · 1 foto</p>
+                </div>
+              </div>
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
             </div>
-            <p class="text-xs text-neutral-600 leading-relaxed italic">"Nunca pensé que el cambio en mi sonrisa se viera tan armónico y natural. El diseño de sonrisa superó todas mis expectativas."</p>
+
+            <div class="flex items-center gap-2 mb-3">
+              <div class="flex text-amber-400 text-xs">
+                ★★★★★
+              </div>
+              <span class="text-[10px] text-neutral-400">Hace 5 años en Google</span>
+            </div>
+
+            <p class="text-xs text-neutral-700 leading-relaxed font-medium">
+              "Excelente trato y buena atención. Muy recomendado."
+            </p>
+
+            <!-- Official Owner Response Sub-Card -->
+            <div class="mt-4 pt-3.5 border-t border-neutral-200/60 bg-white/70 rounded-2xl p-3 border border-neutral-100">
+              <div class="flex items-center gap-1.5 mb-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                <p class="text-[10px] font-bold text-neutral-900">Respuesta de Dra. Rosanna Méndez</p>
+                <span class="text-[9px] text-blue-600 bg-blue-50 px-1.5 py-0.2 rounded font-medium">Propietario</span>
+              </div>
+              <p class="text-[11px] text-neutral-600 italic leading-snug">
+                "Un placer atenderle. Estamos a la orden."
+              </p>
+            </div>
           </div>
-          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-neutral-200/60">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="María G." class="w-9 h-9 rounded-full object-cover">
-            <div>
-              <p class="text-xs font-bold text-neutral-900">María G.</p>
-              <p class="text-[11px] text-neutral-400">Diseño de Sonrisa & Carillas</p>
-            </div>
+
+          <div class="mt-5 pt-3 border-t border-neutral-100 flex items-center justify-between text-[10px] text-neutral-400">
+            <span>Opinión pública en Google</span>
+            <span class="text-emerald-600 font-semibold">✓ Verificada</span>
           </div>
         </div>
 
-        <div class="bg-neutral-50/70 rounded-3xl p-6 border border-neutral-200/60 flex flex-col justify-between">
+        <!-- Review 2: Heldy Espinosa -->
+        <div class="bg-neutral-50/70 hover:bg-white rounded-3xl p-6 border border-neutral-200/60 hover:border-blue-200 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
-            <div class="flex gap-1 mb-4">
-              <span class="text-amber-400 text-sm">★</span><span class="text-amber-400 text-sm">★</span><span class="text-amber-400 text-sm">★</span><span class="text-amber-400 text-sm">★</span><span class="text-amber-400 text-sm">★</span>
+            <!-- Google Reviewer Header -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 to-cyan-500 text-white font-bold text-sm flex items-center justify-center shadow-xs">
+                  H
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-neutral-900">Heldy Espinosa</p>
+                  <p class="text-[10px] text-neutral-400">1 opinión en Google</p>
+                </div>
+              </div>
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
             </div>
-            <p class="text-xs text-neutral-600 leading-relaxed italic">"El diagnóstico digital me permitió ver el resultado final antes de iniciar. El trato de la Dra. Rosanna Méndez y su equipo es impecable."</p>
+
+            <div class="flex items-center gap-2 mb-3">
+              <div class="flex text-amber-400 text-xs">
+                ★★★★★
+              </div>
+              <span class="text-[10px] text-neutral-400">Hace 1 año en Google</span>
+            </div>
+
+            <p class="text-xs text-neutral-700 leading-relaxed font-medium">
+              "Muy buena, ideal para todo en odontología."
+            </p>
+
+            <div class="mt-4 bg-emerald-50/70 border border-emerald-100 rounded-2xl p-3 text-[11px] text-emerald-800">
+              <span class="font-bold">Servicio Integral:</span> Atención para toda la familia en prótesis, profilaxis, caries y estética.
+            </div>
           </div>
-          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-neutral-200/60">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Carlos R." class="w-9 h-9 rounded-full object-cover">
-            <div>
-              <p class="text-xs font-bold text-neutral-900">Carlos R.</p>
-              <p class="text-[11px] text-neutral-400">Ortodoncia & Alineadores</p>
-            </div>
+
+          <div class="mt-5 pt-3 border-t border-neutral-100 flex items-center justify-between text-[10px] text-neutral-400">
+            <span>Opinión pública en Google</span>
+            <span class="text-emerald-600 font-semibold">✓ Verificada</span>
           </div>
         </div>
 
-        <div class="bg-neutral-50/70 rounded-3xl p-6 border border-neutral-200/60 flex flex-col justify-between">
+        <!-- Review 3: Esterlin Ramirez & Otros Pacientes -->
+        <div class="bg-neutral-50/70 hover:bg-white rounded-3xl p-6 border border-neutral-200/60 hover:border-blue-200 hover:shadow-soft transition-all duration-300 flex flex-col justify-between">
           <div>
-            <div class="flex gap-1 mb-4">
-              <span class="text-amber-400 text-sm">★</span><span class="text-amber-400 text-sm">★</span><span class="text-amber-400 text-sm">★</span><span class="text-amber-400 text-sm">★</span><span class="text-amber-400 text-sm">★</span>
+            <!-- Google Reviewer Header -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-emerald-600 to-teal-500 text-white font-bold text-sm flex items-center justify-center shadow-xs">
+                  E
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-neutral-900">Esterlin Ramirez</p>
+                  <p class="text-[10px] text-neutral-400">2 opiniones · 2 fotos</p>
+                </div>
+              </div>
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
             </div>
-            <p class="text-xs text-neutral-600 leading-relaxed italic">"Me realicé una limpieza profunda y blanqueamiento láser. Cero dolor y mis dientes lucen radiantes."</p>
+
+            <div class="flex items-center gap-2 mb-3">
+              <div class="flex text-amber-400 text-xs">
+                ★★★★★
+              </div>
+              <span class="text-[10px] text-neutral-400">Hace 2 años en Google</span>
+            </div>
+
+            <p class="text-xs text-neutral-700 leading-relaxed font-medium">
+              "Bien. Excelente atención, instalaciones cómodas y muy buen trato profesional."
+            </p>
+
+            <!-- More Patient Badges (Carlita Paulino & Jenifer) -->
+            <div class="mt-4 pt-3.5 border-t border-neutral-200/60">
+              <p class="text-[10px] font-bold text-neutral-500 uppercase tracking-wider mb-2">Más valoraciones 5 estrellas:</p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-[10px] bg-neutral-100 text-neutral-700 font-medium px-2 py-0.5 rounded-full">Carlita Paulino ★★★★★</span>
+                <span class="text-[10px] bg-neutral-100 text-neutral-700 font-medium px-2 py-0.5 rounded-full">Jenifer (Local Guide) ★★★★★</span>
+              </div>
+            </div>
           </div>
-          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-neutral-200/60">
-            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Ana L." class="w-9 h-9 rounded-full object-cover">
-            <div>
-              <p class="text-xs font-bold text-neutral-900">Ana L.</p>
-              <p class="text-[11px] text-neutral-400">Estética Dental & Blanqueamiento</p>
-            </div>
+
+          <div class="mt-5 pt-3 border-t border-neutral-100 flex items-center justify-between text-[10px] text-neutral-400">
+            <span>Opinión pública en Google</span>
+            <span class="text-emerald-600 font-semibold">✓ Verificada</span>
           </div>
         </div>
 
